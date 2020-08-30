@@ -1,0 +1,44 @@
+# This gitignore is for a generic website, to be added to for more things to
+# ignore.  The purpose of this file is to specify files that should be ignored
+# by git when making a commit (adding files to be pushed upstream to ones
+# repository).  The files matching the patterns in this file will be ignored
+# when committing, and not show up even if they change.
+
+## Ignore Build Files and Directories
+build/
+dist/
+*.log
+
+## HTML Generic Ignores
+
+## Javascript Generic Ignores
+node_modules/
+logs
+
+## CSS/SCSS Generic Ignores
+
+## Temporary Files
+tmp/
+*.tmp
+*.bak
+
+## Edit Related Ignores
+### Emacs Related Temporary Files
+*~
+.\#*
+
+### Vi / Vim
+*.swp
+
+## OS Specific Ignores
+### Mac OSX
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+### Windows
+Thumbs.db
+Desktop.ini
+*.lnk
