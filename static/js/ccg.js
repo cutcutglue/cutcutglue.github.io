@@ -5,38 +5,48 @@
  * causes the dropdown to become visible on click, and hidden when a subsequent
  * button is clicked.
  */
-function bindAccordion() {
-    let accordion = document.getElementById('accordion');
+$(document).ready(function() {
+    _.templateSettings = {
+        interpolate: /\{\{(.+?)\}\}/g
+    };
 
-    // Find the main accordion button that will show the dropdwon.
-    let menu = accordion.querySelectorAll('.accordion-button')[0];
+    $('.accordion .accordion-button').click(function(ev) {
+        $('.accordion .accordion-dropdown').toggle();
+    });
 
-    // Find the dropdown, and the subsequent links in the dropdown.
-    let dropdown = accordion.querySelectorAll('.accordion-dropdown')[0];
-    let links = dropdown.querySelectorAll('a');
+    $('.accordion .accordion-dropdown a').click(function(ev) {
+        let $target = $($(ev.target).attr('href'));
+        ev.preventDefault();
+        ev.stopPropagation();
+        $('.accordion .accordion-dropdown').toggle();
+        $('html, body').animate({
+            'scrollTop': $target.offset().top
+        }, 1000);
+    });
 
-    menu.onclick = (function(menu, dropdown) {
-        return (function() {
-            if ((dropdown.style.display == '') ||
-                (dropdown.style.display == 'none')) {
-                dropdown.style.display = 'block';
-            } else {
-                dropdown.style.display = 'none';
-            }
-        });
-    })(menu, dropdown);
+    $('.nav-links a').click(function(ev) {
+        let $target = $($(ev.target).attr('href'));
+        ev.preventDefault();
+        ev.stopPropagation();
+        $('html, body').animate({
+            'scrollTop': $target.offset().top
+        }, 1000);
+    });
 
-    links.forEach((function(menu, dropdown) {
-        return (function(el) {
-            console.log(el);
-            el.onclick = (function() {
-                dropdown.style.display = 'none';
-                window.location.href = el.getAttribute('data-href');
+    $('[data-href="#hearts"]').click(function(ev) {
+        let $container = $(ev.target).parent().parent();
+        for (var i = 0; i < 3; i++) {
+            let tmpl = '<div class=\'heart heart-' + i + '\'></div>';
+            let $el = $(tmpl);
+            $container.append($el);
+            $el.fadeOut(5000, function() {
+                $(this).remove();
             });
-        });
-    })(menu, dropdown));
-}
+        }
+    });
 
-window.onload = (function(ev) {
-    bindAccordion();
+    _.each(window.gallery, function(img) {
+        let tmpl = _.template($('#gallery-image').html())(img);
+        $('#gallery-images').append(tmpl);
+    });
 });

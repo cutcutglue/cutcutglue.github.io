@@ -94,16 +94,31 @@ section:nth-child(even) {
     text-align: center !important;
 }
 
+.noselect {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
 .title {
     border: 0;
     margin: 0;
     padding: 0;
     opacity: 0.7;
     font-size: 55px;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 0.1em;
     padding: 5px 0px 10px 0px;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 50px;
+    }
 }
 
 .container {
@@ -156,37 +171,43 @@ section:nth-child(even) {
 
 .nav .nav-links a,
 .nav .nav-links a:visited {
-    width: 140px;
-    color: #222222;
+    /* width: 140px; */
+    /* color: #222222; */
+    color: #9E9E9E;
     padding: 4px 0px;
     font-weight: 300;
+    letter-spacing: 2.5px;
     display: inline-block;
     text-decoration: none;
     box-sizing: border-box;
-    border: 1px solid #222222;
+    /* border: 1px solid #222222; */
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 }
 
 .nav .nav-links a:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .nav .nav-links a:hover {
-    color: #FFFFFF;
+    /* color: #8FC1E3; */
+    /* color: #FFFFFF; */
+    color: #222222;
     cursor: pointer;
     text-decoration: none;
-    background-color: #222222;
+    /* background-color: #222222; */
 }
 
 .nav .accordion {
     width: 100%;
+    cursor: pointer;
     margin-bottom: -20px;
 }
 
 .nav .accordion .accordion-button,
 .nav .accordion .accordion-button:visited {
     width: 100%;
+    z-index: 255;
     color: #F9F9F9;
     cursor: pointer;
     padding: 8px 5px;
@@ -201,6 +222,7 @@ section:nth-child(even) {
 
 .nav .accordion .accordion-button:hover {
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .nav .accordion .accordion-dropdown {
@@ -232,6 +254,7 @@ section:nth-child(even) {
 .hero {
     width: 100%;
     height: 300px;
+    margin-top: 5px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -272,7 +295,9 @@ section:nth-child(even) {
 }
 
 .custom p {
+    padding: 0px 5px;
     font-weight: 100;
+    box-sizing: border-box;
 }
 
 .gallery {
@@ -287,7 +312,8 @@ section:nth-child(even) {
 }
 
 .gallery-images .gallery-image {
-    width: 33%;
+    width: 32.2%;
+    margin: 0.3%;
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -300,7 +326,8 @@ section:nth-child(even) {
 
 @media screen and (max-width: 768px) {
     .gallery-images .gallery-image {
-        width: 49%;
+        width: 45%;
+        margin: 1%;
     }
 }
 
@@ -313,7 +340,7 @@ section:nth-child(even) {
     font-size: 10px;
     font-weight: 300;
     position: absolute;
-    border-radius: 2px;
+    border-radius: 1px;
     background-size: cover;
     text-transform: uppercase;
     background-position: center;
@@ -339,8 +366,8 @@ section:nth-child(even) {
     margin: 0 auto;
     flex-wrap: wrap;
     position: absolute;
+    border-radius: 1px;
     align-items: center;
-    border-radius: 2px;
     justify-content: center;
     box-sizing: content-box;
     background-color: rgba(0, 0, 0, 0.4);
@@ -349,7 +376,7 @@ section:nth-child(even) {
 .gallery-images .gallery-image .gallery-image-photo h2 {
     font-size: 15px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -427,7 +454,9 @@ section:nth-child(even) {
 .contact .contact-details .contact-description {
     width: 75%;
     text-align: left;
+    padding: 0px 5px;
     display: table-cell;
+    box-sizing: border-box;
     vertical-align: middle;
 }
 
@@ -517,9 +546,122 @@ section:nth-child(even) {
 }
 
 .sep {
-    width: 100%;
+    width: 99%;
     display: block;
     margin: 0 auto;
     margin-bottom: 12px;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Animation Code */
+
+/* Heart (Source: https://codepen.io/lisafolkerson/pen/BjRoJO) */
+
+.heart {
+    position: relative;
+}
+
+.heart:before,
+.heart:after {
+    top: 0 px;
+    left: 18px;
+    content: '';
+    width: 18px;
+    height: 30px;
+    position: absolute;
+    background: #CC2022;
+    border-radius: 30px 30px 0 0;
+
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-border-radius: 20px 50% 0 0;
+    -webkit-transform: rotate(-45deg);
+
+    transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0px;
+
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+    transform-origin :100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.heart-0 {
+    left: 5%;
+    opacity: 0.6;
+
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+
+    -moz-animation: move 5s linear infinite, sideways 4s ease-in-out infinite alternate;
+    -webkit-animation: move 5s linear infinite, sideways 4s ease-in-out infinite alternate;
+}
+
+.heart-1 {
+    left: 25%;
+    opacity: 0.9;
+
+    transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+
+    -moz-animation: move 5s linear infinite, sideways 5s ease-in-out infinite alternate;
+    -webkit-animation: move 5s linear infinite, sideways 5s ease-in-out infinite alternate;
+}
+
+.heart-2 {
+    left: 55%;
+    opacity: 0.8;
+
+    transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+
+    -moz-animation: move 5s linear infinite, sideways 4s ease-in-out infinite alternate;
+    -webkit-animation: move 5s linear infinite, sideways 4s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@keyframes sideways {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@-webkit-keyframes sideways {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
 }
