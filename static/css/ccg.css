@@ -1,0 +1,525 @@
+/* Main CSS File for cut.cut.glue */
+
+html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    font-size: 15px;
+    background-color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: #CCCCCC;
+    font-size: 11px;
+    padding-top: 43px;
+    text-align: center;
+    position: absolute;
+    margin-bottom: 27px;
+    box-sizing: border-box;
+}
+
+footer:before {
+    clear: both;
+}
+
+footer a,
+footer a:visited {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #222222;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px 5px 8px 5px;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+/*
+section:nth-child(even) {
+    background-color: #F7F7F7;
+}
+*/
+
+@media screen and (min-width: 1024px) {
+    section {
+        max-width: 1024px;
+        width: 65% !important;
+    }
+
+    footer .footer-content {
+        margin: 0 auto;
+        max-width: 1024px;
+        width: 65% !important;
+    }
+}
+
+.centered {
+    text-align: center !important;
+}
+
+.title {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    font-size: 55px;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding: 5px 0px 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.container.container-fluid {
+    display: block;
+    min-width: 100%;
+}
+
+.content {
+    min-width: 100%;
+}
+
+.content.content-footer {
+    padding-bottom: 70px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .nav.desktop {
+        display: none;
+    }
+
+    .nav.mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav.desktop {
+        display: block;
+    }
+
+    .nav.mobile {
+        display: none;
+    }
+}
+
+.nav .nav-links {
+    width: 100%;
+    padding: 5px 0px;
+    box-sizing: border-box;
+}
+
+.nav .nav-links a,
+.nav .nav-links a:visited {
+    width: 140px;
+    color: #222222;
+    padding: 4px 0px;
+    font-weight: 300;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid #222222;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav .nav-links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav .nav-links a:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #222222;
+}
+
+.nav .accordion {
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.nav .accordion .accordion-button,
+.nav .accordion .accordion-button:visited {
+    width: 100%;
+    color: #F9F9F9;
+    cursor: pointer;
+    padding: 8px 5px;
+    font-weight: 300;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #222222;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav .accordion .accordion-button:hover {
+    cursor: pointer;
+}
+
+.nav .accordion .accordion-dropdown {
+    width: 100%;
+    display: none;
+}
+
+.nav .accordion .accordion-dropdown a,
+.nav .accordion .accordion-dropdown a:visited {
+    width: 100%;
+    color: #222222;
+    cursor: pointer;
+    font-weight: 300;
+    padding: 8px 5px;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav .accordion .accordion-dropdown a:hover {
+    color: #F9F9F9;
+    cursor: pointer;
+    background-color: #222222;
+}
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.hero .hero-image .hero-placeholder {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    font-size: 36px;
+    font-weight: 100;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom {
+    text-align: left;
+}
+
+.custom h2 {
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom p {
+    font-weight: 100;
+}
+
+.gallery {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.gallery-images {
+    width: 100%;
+    display: block;
+    border-collapse: collapse;
+}
+
+.gallery-images .gallery-image {
+    width: 33%;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.gallery-images .gallery-image .gallery-dummy {
+    margin-top: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-images .gallery-image {
+        width: 49%;
+    }
+}
+
+.gallery-images .gallery-image .gallery-image-photo {
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    color: #F7F7F7;
+    font-size: 10px;
+    font-weight: 300;
+    position: absolute;
+    border-radius: 2px;
+    background-size: cover;
+    text-transform: uppercase;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.gallery-images .gallery-image .gallery-image-photo:hover {
+}
+
+.gallery-images .gallery-image .gallery-image-photo .overlay {
+    opacity: 0;
+}
+
+.gallery-images .gallery-image .gallery-image-photo:hover .overlay {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    border-radius: 2px;
+    justify-content: center;
+    box-sizing: content-box;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gallery-images .gallery-image .gallery-image-photo h2 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order h2 {
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order .order-form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.order .order-form .order-element {
+    width: 100%;
+    text-align: left;
+}
+
+.order .order-form label {
+    width: 100%;
+    font-weight: 300;
+}
+
+.order .order-form input[type="email"],
+.order .order-form input[type="text"],
+.order .order-form textarea {
+    margin: 0;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.order .order-form textarea {
+    overflow: auto;
+    resize: vertical;
+    min-height: 100px;
+    vertical-align: top;
+}
+
+.order .order-form input[type="submit"] {
+    width: 140px;
+    color: #222222;
+    padding: 4px 0px;
+    font-weight: 300;
+    box-sizing: border-box;
+    outline: none !important;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order .order-form input[type="submit"]:hover {
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.contact {
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+.contact .contact-details {
+    width: 100%;
+    font-weight: 100;
+    display: table-row;
+}
+
+.contact .contact-details .contact-description {
+    width: 75%;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    width: 100%;
+}
+
+.contact .contact-details .contact-description h2 {
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .contact-details .contact-description h3 {
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .contact-details .contact-description p {
+}
+
+.contact .contact-details .contact-description .contact-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact .contact-details .contact-description .contact-links .contact-link {
+}
+
+.contact .contact-details .contact-description .contact-links .contact-link:hover {
+}
+
+.contact .contact-details .contact-description .contact-links .contact-link i {
+}
+
+.contact .contact-details .contact-description .contact-links .contact-link a,
+.contact .contact-details .contact-description .contact-links .contact-link a:visited {
+    color: #222222;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.contact .contact-details .contact-description .contact-links .contact-link a:hover {
+    opacity: 0.5;
+    color: #222222;
+}
+
+.contact .contact-details .contact-image {
+    width: 25%;
+    position: relative;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact .contact-details .contact-image {
+        width: 100%;
+    }
+}
+
+.contact .contact-details .contact-image .contact-image-dummy {
+    margin-top: 100%;
+    box-sizing: border-box;
+}
+
+.contact .contact-details .contact-image .contact-image-photo {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.footer-content {
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.sep {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}

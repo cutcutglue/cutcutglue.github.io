@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <!--
+      This is the head tag.  The head tag is where stylesheets, javascript, and
+      other external assets are usually loaded.  Content here does not appear
+      in the actual site, but provides information or resources for the site.
+      Things included here will have to be loaded before the main body of the
+      site is loaded.  This is also where metadata, and similar information can
+      be provided for things like search engines.
+      -->
+    <!-- Title of the Page -->
+    <title>Cut Cut Glue | Aimee Blaney</title>
+    <!-- Meta Tags (https://www.w3schools.com/tags/tag_meta.asp) -->
+    <meta name='description' content='Custom gifts for any occasion.' />
+    <meta name='keywords' content='cards, cutting boards, art, custom, gifts, anniversary, birthday' />
+    <meta name='author' content='Aimee Blayney' />
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <!-- The icon that shows in the browser bar goes here. -->
+    <!-- TODO <link rel='icon' type='image/png' href='' /> -->
+    <!-- Fonts (https://fonts.google.com/) -->
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap' rel='stylesheet'>
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap' rel='stylesheet'>
+    <!-- CSS -->
+    <!-- <link href='/path/to/stylesheet' type='text/css' rel='stylesheet' /> -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' rel='stylesheet' />
+    <link href='static/css/ccg.css' type='text/css' rel='stylesheet' />
+    <!-- JavaScript -->
+    <!-- <script src='/path/to/js' type='text/javascript'></script> -->
+    <script src='static/js/ccg.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <!--
+      This is the body tag.  Within the body tag goes the content that will
+      appear in the site.
+    -->
+    <div class='container container-fluid'>
+      <!--
+        This fluid container resizes to fit the viewport (screen size) in order
+        to accommodate both desktop and mobile devices.
+        -->
+      <h1 class='title'>cut.cut.glue</h1>
+      <main data-role='navigation'>
+        <!-- The main (title bar) section shown befor ethe sections of the site. -->
+        <nav class='nav desktop' data-role='desktop'>
+          <!-- Navigation bar that is shown on desktop / large screen devices. -->
+          <div class='nav-links'>
+            <a href='#'>Home</a>
+            <a href='#custom'>Custom</a>
+            <a href='#gallery'>Gallery</a>
+            <a href='#order'>Order</a>
+          </div>
+        </nav>
+        <nav class='nav mobile' data-role='mobile'>
+          <!-- Navigation bar (accordion) that is shown on mobile devices. -->
+          <div id='accordion' class='accordion'>
+            <!--
+              An according brings down a drop down menu.  This is useful on
+              devices where horizontal real estate is not as available.
+            -->
+            <a data-role='accordion' class='accordion-button'>Menu</a>
+            <div class='accordion-dropdown'>
+              <!--
+                Elements here are visible when the user has clicked the
+                above menu button.
+              -->
+              <a data-href='#'>Home</a>
+              <a data-href='#custom'>Custom</a>
+              <a data-href='#gallery'>Gallery</a>
+              <a data-href='#order'>Order</a>
+            </div>
+          </div>
+        </nav>
+      </main>
+      <div class='content content-footer' data-role='content'>
+        <!-- This is the where the content of the site goes. -->
+        <section id='hero' data-section='hero' class='hero'>
+          <!--
+            This is the hero image section. It serves as a first impression
+            for visitors.
+          -->
+          <div class='hero-image'>
+            <div class='hero-placeholder'>
+              <p>Hero Placeholder</p>
+            </div>
+          </div>
+        </section>
+        <section id='custom' data-section='custom' class='custom'>
+          <!-- This is the section that talks about the process of how things are made. -->
+          <div class='centered'>
+            <h2>The Process</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+        <section id='gallery' data-section='gallery' class='gallery'>
+          <!--
+            This is the gallery section that shows a rotation of some of the orders that
+            have been created.  Individuals can click through to Instagram, or an expanded
+            gallery section.
+            -->
+          <div class='gallery-images'>
+            <div class='gallery-image'>
+              <div class='gallery-dummy'></div>
+              <a href='https://www.instagram.com/p/CESl4PApQtM/' target='_blank' class='gallery-image-photo' style='background-image: url("static/img/gallery_1.jpg")'>
+                <div class='overlay'>
+                  <h2>Made With "Love" ...And Some Other Shit</h2>
+                </div>
+              </a>
+            </div>
+            <div class='gallery-image'>
+              <div class='gallery-dummy'></div>
+              <a href='https://www.instagram.com/p/CDZgt-0pfbo/' target='_blank' class='gallery-image-photo' style='background-image: url("static/img/gallery_2.jpg")'>
+                <div class='overlay'>
+                  <h2>Salter</h2>
+                </div>
+              </a>
+            </div>
+            <div class='gallery-image'>
+              <div class='gallery-dummy'></div>
+              <a href='https://www.instagram.com/p/B8eZ6BSpeu5/' target='_blank' class='gallery-image-photo' style='background-image: url("static/img/gallery_3.jpg")'>
+                <div class='overlay'>
+                  <h2>Valentine's Day &hearts; Michelle</h2>
+                </div>
+              </a>
+            </div>
+            <div class='gallery-image'>
+              <div class='gallery-dummy'></div>
+              <a href='https://www.instagram.com/p/B-LHcjgpskl/' target='_blank' class='gallery-image-photo' style='background-image: url("static/img/gallery_4.jpg")'>
+                <div class='overlay'>
+                  <h2>Happy Birthday!</h2>
+                </div>
+              </a>
+            </div>
+            <div class='gallery-image'>
+              <div class='gallery-dummy'></div>
+              <a href='https://www.instagram.com/p/B0cDmk-gWCQ/' target='_blank' class='gallery-image-photo' style='background-image: url("static/img/gallery_5.jpg")'>
+                <div class='overlay'>
+                  <h2>Father's Day</h2>
+                </div>
+              </a>
+            </div>
+            <div class='gallery-image'>
+              <div class='gallery-dummy'></div>
+              <a href='https://www.instagram.com/p/CDzd20xpweg/' target='_blank' class='gallery-image-photo' style='background-image: url("static/img/gallery_6.jpg")'>
+                <div class='overlay'>
+                  <h2>Mr. & Mrs.</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id='order' data-section='order' class='order'>
+          <!--
+            This section contains a form for submitting an order.
+          -->
+          <h2>Place an Order</h2>
+          <form action='mailto:cut.cut.glue@gmail.com' method='POST' name='OrderForm' class='order-form'>
+            <div class='order-element'>
+              <label for='name'>Name</label>
+              <input type='text' name='name' id='name' placeholder='Gus Griswald' />
+            </div>
+            <div class='order-element'>
+              <label for='email'>Email</label>
+              <input type='email' name='email' id='email' placeholder='gus@thirdstreet.ca' />
+            </div>
+            <div class='order-element'>
+              <label for='details'>Describe What You Would Like</label>
+              <textarea id='details' name='details' placeholder='A card featuring a bee....'></textarea>
+            </div>
+            <div class='order-element'>
+              <label for='date'>When Would You Like It By?</label>
+              <input type='text' name='date' id='date' placeholder='Before Christmas....' />
+            </div>
+            <div class='order-element'>
+              <label for='budget'>What is your budget? (CAD)</label>
+              <input type='text' name='budget' id='budget' placeholder='$20' />
+            </div>
+            <div class='order-element centered'>
+              <input type='submit' placeholder='Place an Order' />
+            </div>
+          </form>
+        </section>
+        <section id='contact' data-section='contact' class='contact'>
+          <!-- This is the terminal section providing contact information to reach out. -->
+          <div class='contact-details'>
+            <div class='contact-description'>
+              <h2>Get In Touch</h2>
+              <h3>Aimee Blayney</h3>
+              <p>
+                Hi, my name is Aimee Blayney, and I am the owner of Cut Cut Glue.
+                I love painting, crafts, and children.  I create and sell hand made
+                cards, cutting boards, and crafts.  Contact me below, or follow me
+                on social media.
+              </p>
+              <div class='contact-links'>
+                <div class='contact-link'>
+                  <a href='https://instagram.com/cut.cut.glue'>
+                    <i class='fa fa-instagram' aria-hidden='true'></i>
+                    instagram.com/cut.cut.glue
+                  </a>
+                </div>
+                <div class='contact-link'>
+                  <a href='mailto:cut.cut.glue@gmail.com'>
+                    <i class='fa fa-envelope-o' aria-hidden='true'></i>
+                    cut.cut.glue[at]gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class='contact-image'>
+              <div class='contact-image-dummy'></div>
+              <div class='contact-image-photo' style='background-image:url("static/img/profile.jpg")'></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Footer comes after the main content site. -->
+      <footer data-role='footer'>
+        <!-- Copy Footer -->
+        <div class='footer-content'>
+          <!-- <i class='sep'></i> -->
+          <p>Copyright &copy; 2020 Aimee Blaney</p>
+          <p style='font-size: 8px'>Made with <a href='#'>&hearts;</a> by <a href='http://hkpeprah.com'>Ford Peprah</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
