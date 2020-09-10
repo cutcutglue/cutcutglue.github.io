@@ -1,38 +1,43 @@
-window.gallery = [
-    {
-        "link": "https://www.instagram.com/p/CESl4PApQtM/",
-        "image": "static/img/gallery_1.jpg",
-        "name": "Made With \"Love\" ...And Some Other Shit",
-        "description": ""
+window.gallery = {
+    "settings": {
+        "visible": 6
     },
-    {
-        "link": "https://www.instagram.com/p/CDZgt-0pfbo/",
-        "image": "static/img/gallery_2.jpg",
-        "name": "Salter",
-        "description": ""
-    },
-    {
-        "link": "https://www.instagram.com/p/B8eZ6BSpeu5/",
-        "image": "static/img/gallery_3.jpg",
-        "name": "Valentine's Day &hearts; Michelle",
-        "description": ""
-    },
-    {
-        "link": "https://www.instagram.com/p/B-LHcjgpskl/",
-        "image": "static/img/gallery_4.jpg",
-        "name": "Happy Birthday!",
-        "description": ""
-    },
-    {
-        "link": "https://www.instagram.com/p/B0cDmk-gWCQ/",
-        "image": "static/img/gallery_5.jpg",
-        "name": "Father's Day",
-        "description": ""
-    },
-    {
-        "link": "https://www.instagram.com/p/CDzd20xpweg/",
-        "image": "static/img/gallery_6.jpg",
-        "name": "Mr. & Mrs",
-        "description": ""
-    }
-]
+    "images": [
+        {
+            "link": "https://www.instagram.com/p/CESl4PApQtM/",
+            "image": "static/img/gallery_1.jpg",
+            "name": "Made With \"Love\" ...And Some Other Shit",
+            "description": ""
+        },
+        {
+            "link": "https://www.instagram.com/p/CDZgt-0pfbo/",
+            "image": "static/img/gallery_2.jpg",
+            "name": "Salter",
+            "description": ""
+        },
+        {
+            "link": "https://www.instagram.com/p/B8eZ6BSpeu5/",
+            "image": "static/img/gallery_3.jpg",
+            "name": "Valentine's Day &hearts; Michelle",
+            "description": ""
+        },
+        {
+            "link": "https://www.instagram.com/p/B-LHcjgpskl/",
+            "image": "static/img/gallery_4.jpg",
+            "name": "Happy Birthday!",
+            "description": ""
+        },
+        {
+            "link": "https://www.instagram.com/p/B0cDmk-gWCQ/",
+            "image": "static/img/gallery_5.jpg",
+            "name": "Father's Day",
+            "description": ""
+        },
+        {
+            "link": "https://www.instagram.com/p/CDzd20xpweg/",
+            "image": "static/img/gallery_6.jpg",
+            "name": "Mr. & Mrs",
+            "description": ""
+        }
+    ]
+}
