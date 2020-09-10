@@ -180,21 +180,23 @@ $(document).ready(function() {
 
     // Add the arrow images.
     let arrowCount = Math.ceil(window.gallery.images.length / visible);
-    for (let i = 0; i < arrowCount; i++) {
-        let $arrow = $('<span class=\'gallery-arrow\'></span>');
-        if (i == 0) {
-            $arrow.addClass('selected');
+    if (arrowCount > 1) {
+        for (let i = 0; i < arrowCount; i++) {
+            let $arrow = $('<span class=\'gallery-arrow\'></span>');
+            if (i == 0) {
+                $arrow.addClass('selected');
+            }
+
+            // When an arrow is clicked, scroll to the selected gallery based on
+            // the index of the gallery.
+            $arrow.click((function(index) {
+                return (function(ev) {
+                    return galleryScroll(index);
+                });
+            })(i));
+
+            $('.gallery-arrow-container').append($arrow);
         }
-
-        // When an arrow is clicked, scroll to the selected gallery based on
-        // the index of the gallery.
-        $arrow.click((function(index) {
-            return (function(ev) {
-                return galleryScroll(index);
-            });
-        })(i));
-
-        $('.gallery-arrow-container').append($arrow);
     }
 
     $('[data-href="#hearts"]').click(function(ev) {
