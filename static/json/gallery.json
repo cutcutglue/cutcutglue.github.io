@@ -41,47 +41,45 @@ window.gallery = {
         },
         {
             "link": "https://www.instagram.com/p/CEZTrgYp92g/",
-            "image: "static/img/IMG_20200826_184834.jpg",
-            "name": "Find Joy"
+            "image": "static/img/IMG_20200826_184834.jpg",
+            "name": "Find Joy",
             "description": ""
-        }, 
+        },
         {
             "link": "https://www.instagram.com/p/CD1YQ6Up5qC/",
-            "image: "static/img/IMG_20200804_214753.jpg", 
-            "name": "Hearts; Anniversary"
+            "image": "static/img/IMG_20200804_214753.jpg",
+            "name": "Hearts; Anniversary",
             "description": ""
         },
         {
             "link": "https://www.instagram.com/p/CCoC3v4p3BU/",
-            "image: "static/img/IMG_20200713_142620.jpg", 
-            "name": "Beatles; Board"
-            "description": "" 
+            "image": "static/img/IMG_20200713_142620.jpg",
+            "name": "Beatles; Board",
+            "description": ""
         },
         {
            "link": "https://www.instagram.com/p/CBYZiqLpLS0/",
-            "image: "static/img/IMG_20200612_121523.jpg", 
-            "name": "Chomsky; Grad"
-            "description": ""
-        }, 
-        {
-            "link": "https://www.instagram.com/p/CBqgnrzJNEN/",
-            "image: "static/img/IMG_20200529_135221.jpg", 
-            "name": "Thank YOU"
-            "description": ""
-        }, 
-        { 
-            "link": "https://www.instagram.com/cut.cut.glue/",
-            "image: "IMG_20200507_140839.jpg", 
-            "name": "Mother's Day"
-            "description": ""
-        }, 
-        {
-            "link": "https://www.instagram.com/cut.cut.glue/",
-            "image: "IMG_20200401_110248.jpg", 
-            "name": "Pink flower"
+            "image": "static/img/IMG_20200612_121523.jpg",
+            "name": "Chomsky; Grad",
             "description": ""
         },
         {
-            "
+            "link": "https://www.instagram.com/p/CBqgnrzJNEN/",
+            "image": "static/img/IMG_20200529_135221.jpg",
+            "name": "Thank YOU",
+            "description": ""
+        },
+        {
+            "link": "https://www.instagram.com/cut.cut.glue/",
+            "image": "static/img/IMG_20200507_140839.jpg",
+            "name": "Mother's Day",
+            "description": ""
+        },
+        {
+            "link": "https://www.instagram.com/cut.cut.glue/",
+            "image": "static/img/IMG_20200401_110248.jpg",
+            "name": "Pink Flower",
+            "description": ""
+        }
     ]
 }

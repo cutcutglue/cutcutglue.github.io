@@ -55,7 +55,7 @@ $(document).ready(function() {
         // Animate scrolling the container to the gallery images that have been
         // selected.
         $container.animate({
-            scrollLeft: $selected.offset().left
+            scrollLeft: $selected.css('left')
         }, 800 /* ms */);
     }
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
         // Since the gallery is absolute, this ensures that the fully gallery
         // is visible.
         $parent.append($container);
-        $parent.height($container.height());
+        $parent.height(Math.max($parent.height(), $container.height()));
     }
 
     // Add the arrow images.
