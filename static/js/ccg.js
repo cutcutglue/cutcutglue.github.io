@@ -60,7 +60,8 @@ $(document).ready(function() {
     }
 
     /**
-     * TODO
+     * Resizes the gallery image container, and gallery images based on the
+     * current width of the page.
      **/
     function resizeGallery() {
         let $galleryImages = $('.gallery-images');
@@ -70,9 +71,29 @@ $(document).ready(function() {
                 let $parent = $galleryImage.parent();
                 let width = $parent.width();
                 let offset = parseInt($galleryImage.data('index'), 10);
+
+                // Resize the gallery image block to be the same size as its
+                // now resized parent.
                 $galleryImage.width(width);
-                $galleryImage.offset({ left: width * (offset / visible) });
-                $parent.height($galleryImage.height());
+
+                // The offset, left will now be changed based on the resized
+                // container.
+                $galleryImage.css('left', width * (offset / visible));
+            }
+
+            // With all the images re-laid out, we have to resize the container
+            // to the total height of the boxes.
+            $($galleryImages[0]).parent().height($($galleryImages[0]).height());
+
+            // Now that all images have been placed, we need to scroll to the
+            // appropriate index, as the scroll left will have changed after
+            // the resizing.
+            let $arrows = $('.gallery-arrow-container .gallery-arrow');
+            for (let i = 0; i < $arrows.length; i++) {
+                if ($($arrows[i]).hasClass('selected')) {
+                    galleryScroll(i);
+                    break;
+                }
             }
         }
     };
@@ -158,7 +179,8 @@ $(document).ready(function() {
         let $container = $('<div class=\'gallery-images\'></div>');
         _.each(window.gallery.images.slice(i, end), function(img) {
             let tmpl = _.template($('#gallery-image').html())(img);
-            $container.append(tmpl);
+            let $el = $(tmpl);
+            $container.append($el);
         });
 
         // We resize the container to have the same width as the parent to
@@ -168,15 +190,16 @@ $(document).ready(function() {
         // Offset the gallery image to the left in order to be able to have the
         // scroll left event.
         $container.data('index', i);
-        $container.offset({ left: $parent.width() * (i / visible) });
 
         // We have to resize the height of the parent to be the height of the
         // gallery images to avoid overflow on the Y access, or clipping.
         // Since the gallery is absolute, this ensures that the fully gallery
         // is visible.
         $parent.append($container);
-        $parent.height(Math.max($parent.height(), $container.height()));
     }
+
+    // Trigger a resize of the gallery after appending all elements.
+    resizeGallery();
 
     // Add the arrow images.
     let arrowCount = Math.ceil(window.gallery.images.length / visible);
