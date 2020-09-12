@@ -228,9 +228,10 @@ section {
 }
 
 .hero {
-    width: 100%;
     padding: 0px;
     height: 500px;
+    width: 100% !important;
+    max-width: 100% !important;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
