@@ -74,37 +74,37 @@ window.gallery = {
             "image": "static/img/IMG_20200507_140839.jpg",
             "name": "Mother's Day",
             "description": ""
-        }
+        },
         {
             "link": "https://www.instagram.com/p/B6LUTNhpI_D/",
             "image": "static/img/IMG_20191216_144554.jpg",
             "name": "Snowman",
             "description": ""
-        }
+        },
         {
             "link": "https://www.instagram.com/p/B39zj9xhTok/",
             "image": "static/img/IMG_20191021_210939.jpg",
             "name": "Adventures",
             "description": ""
-        }
+        },
         {
         "link": "https://www.instagram.com/p/B3PZF_VgsRB/",
         "image": "static/img/IMG_20190312_161820.jpg",
         "name": "Cheers Bitches",
         "description": ""
-        }
+        },
         {
         "link": "https://www.instagram.com/p/B3PY6ThgCRg/",
         "image": "static/img/IMG_20190214_135735.jpg",
         "name": "Valentines",
         "description": ""
-        }
+        },
         {
         "link": "https://www.instagram.com/p/B3PYuUBAezA/",
         "image": "static/img/IMG_20181123_233624.jpg",
         "name": "Snowflake Joy",
         "description": ""
-        }
+        },
         
         
     ]
