@@ -76,10 +76,17 @@ window.gallery = {
             "description": ""
         },
         {
-            "link": "https://www.instagram.com/cut.cut.glue/",
-            "image": "static/img/IMG_20200401_110248.jpg",
-            "name": "Pink Flower",
+            "link": "https://www.instagram.com/p/B6LUTNhpI_D/",
+            "image": "static/img/IMG_20191216_144554.jpg",
+            "name": "Snowman",
             "description": ""
-        }
+        },
+            "link": "https://www.instagram.com/p/B39zj9xhTok/",
+            "image": "static/img/IMG_20191021_210939.jpg",
+            "name": "Adventures",
+            "description": ""
+        {
+        },
+        
     ]
 }
