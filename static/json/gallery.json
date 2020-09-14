@@ -105,6 +105,11 @@ window.gallery = {
         "name": "Snowflake Joy",
         "description": ""
         },
+        {
+        "link": "https://www.instagram.com/p/B3PYuUBAezA/",
+        "image": "static/img/IMG_20191021_210910",
+        "name": "Lady in Red",
+        "description": ""
         
         
     ]
